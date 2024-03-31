@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.0 on darwin)" generated="2024-03-31T17:30:09.630811" rpa="false" schemaversion="5">
+<suite id="s1" name="e2e 6Play" source="/Users/macbook/IdeaProjects/e2e_6Play">
+<suite id="s1-s1" name="Tests" source="/Users/macbook/IdeaProjects/e2e_6Play/tests">
+<suite id="s1-s1-s1" name="6PlayTests" source="/Users/macbook/IdeaProjects/e2e_6Play/tests/6PlayTests.robot">
+<test id="s1-s1-s1-t1" name="Vérifier la navigation vers la page d'accueil de l'application A6" line="9">
+<kw name="Accéder à l'application 6Play" owner="6PlayPage">
+<kw name="Open Application">
+<msg time="2024-03-31T17:30:09.803442" level="FAIL">No keyword with name 'Open Application' found.</msg>
+<arg>${APPIUM_SERVER}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>app=${APP_PATH}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<status status="FAIL" start="2024-03-31T17:30:09.803384" elapsed="0.000132">No keyword with name 'Open Application' found.</status>
+</kw>
+<kw name="Click Element">
+<arg>${PlayLocaters.btnContinuerEtAccepter}</arg>
+<status status="NOT RUN" start="2024-03-31T17:30:09.804864" elapsed="0.000037"/>
+</kw>
+<status status="FAIL" start="2024-03-31T17:30:09.801108" elapsed="0.003983">No keyword with name 'Open Application' found.</status>
+</kw>
+<kw name="Element Should Be Visible">
+<var>${is_visible}</var>
+<arg>${PlayLocaters.logo6Play}</arg>
+<status status="NOT RUN" start="2024-03-31T17:30:09.806710" elapsed="0.000035"/>
+</kw>
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${is_visible}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="NOT RUN" start="2024-03-31T17:30:09.807026" elapsed="0.000041"/>
+</kw>
+<status status="FAIL" start="2024-03-31T17:30:09.800285" elapsed="0.007060">No keyword with name 'Open Application' found.</status>
+</test>
+<status status="FAIL" start="2024-03-31T17:30:09.663828" elapsed="0.144048"/>
+</suite>
+<status status="FAIL" start="2024-03-31T17:30:09.662525" elapsed="0.146003"/>
+</suite>
+<status status="FAIL" start="2024-03-31T17:30:09.634584" elapsed="0.174488"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="e2e 6Play">e2e 6Play</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Tests">e2e 6Play.Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="6PlayTests">e2e 6Play.Tests.6PlayTests</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-03-31T17:30:09.797733" level="ERROR">Error in file '/Users/macbook/IdeaProjects/e2e_6Play/pages/6PlayPage.robot' on line 2: Importing library 'AppiumLibrary' failed: ModuleNotFoundError: No module named 'appium.webdriver.common.touch_action'
+Traceback (most recent call last):
+  File "/Users/macbook/IdeaProjects/e2e_6Play/venv/lib/python3.12/site-packages/AppiumLibrary/__init__.py", line 4, in &lt;module&gt;
+    from AppiumLibrary.keywords import *
+  File "/Users/macbook/IdeaProjects/e2e_6Play/venv/lib/python3.12/site-packages/AppiumLibrary/keywords/__init__.py", line 9, in &lt;module&gt;
+    from ._touch import _TouchKeywords
+  File "/Users/macbook/IdeaProjects/e2e_6Play/venv/lib/python3.12/site-packages/AppiumLibrary/keywords/_touch.py", line 3, in &lt;module&gt;
+    from appium.webdriver.common.touch_action import TouchAction
+PYTHONPATH:
+  /Users/macbook/IdeaProjects/e2e_6Play
+  /Users/macbook/IdeaProjects/e2e_6Play
+  /Users/macbook/Library/Application Support/JetBrains/IntelliJIdea2023.3/plugins/python/helpers/pycharm_display
+  /Library/Frameworks/Python.framework/Versions/3.12/lib/python312.zip
+  /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12
+  /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/lib-dynload
+  /Users/macbook/IdeaProjects/e2e_6Play/venv/lib/python3.12/site-packages
+  /Users/macbook/Library/Application Support/JetBrains/IntelliJIdea2023.3/plugins/python/helpers/pycharm_matplotlib_backend</msg>
+</errors>
+</robot>

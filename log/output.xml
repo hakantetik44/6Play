@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.9.6 on darwin)" generated="20240331 13:12:02.668" rpa="false" schemaversion="4">
+<suite id="s1" name="6PlayTests" source="/Users/macbook/IdeaProjects/e2e_6Play/tests/6PlayTests.robot">
+<test id="s1-t1" name="Vérifier la navigation vers la page d'accueil de l'application A6" line="10">
+<kw name="Accéder à l'application 6Play" library="6PlayPage">
+<kw name="Open Application">
+<arg>${APPIUM_SERVER}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>app=${APP_PATH}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<msg timestamp="20240331 13:12:02.731" level="FAIL">No keyword with name 'Open Application' found.</msg>
+<status status="FAIL" starttime="20240331 13:12:02.730" endtime="20240331 13:12:02.731"/>
+</kw>
+<kw name="Click Element">
+<arg>${PlayLocaters.btnContinuerEtAccepter}</arg>
+<status status="NOT RUN" starttime="20240331 13:12:02.735" endtime="20240331 13:12:02.735"/>
+</kw>
+<status status="FAIL" starttime="20240331 13:12:02.727" endtime="20240331 13:12:02.735"/>
+</kw>
+<kw name="Element Should Be Visible">
+<var>${is_visible}</var>
+<arg>${PlayLocaters.logo6Play}</arg>
+<status status="NOT RUN" starttime="20240331 13:12:02.739" endtime="20240331 13:12:02.739"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${is_visible}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="NOT RUN" starttime="20240331 13:12:02.739" endtime="20240331 13:12:02.740"/>
+</kw>
+<status status="FAIL" starttime="20240331 13:12:02.726" endtime="20240331 13:12:02.740">No keyword with name 'Open Application' found.</status>
+</test>
+<status status="FAIL" starttime="20240331 13:12:02.670" endtime="20240331 13:12:02.741"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="6PlayTests">6PlayTests</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20240331 13:12:02.703" level="ERROR">Error in file '/Users/macbook/IdeaProjects/e2e_6Play/tests/6PlayTests.robot' on line 2: Importing library 'AppiumLibrary' failed: ModuleNotFoundError: No module named 'AppiumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /Users/macbook/Library/Application Support/JetBrains/IdeaIC2023.3/plugins/robotframework-intellij/lib/robotframework_debug_adapter
+  /Users/macbook/IdeaProjects/e2e_6Play
+  /Users/macbook/Library/Application Support/JetBrains/IdeaIC2023.3/plugins/robotframework-intellij/lib
+  /Users/macbook/Library/Application Support/JetBrains/IdeaIC2023.3/plugins/robotframework-intellij/lib/robotframework_ls/vendored
+  /Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python39.zip
+  /Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9
+  /Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload
+  /Users/macbook/Library/Python/3.9/lib/python/site-packages
+  /Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/site-packages</msg>
+<msg timestamp="20240331 13:12:02.722" level="ERROR">Error in file '/Users/macbook/IdeaProjects/e2e_6Play/pages/6PlayPage.robot' on line 2: Importing library 'AppiumLibrary' failed: ModuleNotFoundError: No module named 'AppiumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /Users/macbook/Library/Application Support/JetBrains/IdeaIC2023.3/plugins/robotframework-intellij/lib/robotframework_debug_adapter
+  /Users/macbook/IdeaProjects/e2e_6Play
+  /Users/macbook/Library/Application Support/JetBrains/IdeaIC2023.3/plugins/robotframework-intellij/lib
+  /Users/macbook/Library/Application Support/JetBrains/IdeaIC2023.3/plugins/robotframework-intellij/lib/robotframework_ls/vendored
+  /Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python39.zip
+  /Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9
+  /Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload
+  /Users/macbook/Library/Python/3.9/lib/python/site-packages
+  /Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/site-packages</msg>
+</errors>
+</robot>
